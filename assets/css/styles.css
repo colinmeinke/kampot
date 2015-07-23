@@ -170,15 +170,15 @@ hr {
 }
 
 .header__nav-list__item--twitter .header__nav-list__item__icon {
-  background: url(../images/twitter.svg);
+  background: url(assets/images/twitter.svg);
 }
 
 .header__nav-list__item--instagram .header__nav-list__item__icon {
-  background: url(../images/instagram.svg);
+  background: url(assets/images/instagram.svg);
 }
 
 .header__nav-list__item--pinterest .header__nav-list__item__icon {
-  background: url(../images/pinterest.svg);
+  background: url(assets/images/pinterest.svg);
 }
 
 .header__nav-list__item--twitter .header__nav-list__item__title,

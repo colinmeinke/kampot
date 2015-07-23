@@ -10,6 +10,12 @@ gulp.task( 'minifyCSS', function () {
     .pipe( gulp.dest( './assets/css/' ));
 });
 
+gulp.task( 'inlineCSS', [ 'minifyCSS' ], function () {
+  gulp.src( './assets/css/styles.min.css' )
+    .pipe( rename( 'styles.hbs' ))
+    .pipe( gulp.dest( './partials' ));
+});
+
 gulp.task( 'minifyJS', function () {
   gulp.src( './assets/js/scripts.js' )
     .pipe( uglify())
@@ -18,7 +24,7 @@ gulp.task( 'minifyJS', function () {
 });
 
 gulp.task('watch', function() {
-  gulp.watch( './assets/css/*.css', [ 'minifyCSS' ]);
+  gulp.watch( './assets/css/*.css', [ 'minifyCSS', 'inlineCSS' ]);
   gulp.watch( './assets/js/*.js', [ 'minifyJS' ]);
 });
 
