@@ -1,8 +1,19 @@
+@font-face {
+    font-family: "Antic Slab";
+    src: url(assets/fonts/antic-slab-regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
 html {
   color: hsla( 155, 15%, 27%, 1 );
-  font-family: "Antic Slab", Serif;
+  font-family: "Droid Serif", "Times", "Times New Roman", serif;
   font-size: 106.25%;
   line-height: 1.5;
+}
+
+.fonts-loaded {
+  font-family: "Antic Slab", "Droid Serif", "Times", "Times New Roman", serif;
 }
 
 body,
