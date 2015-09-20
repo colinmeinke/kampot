@@ -60,6 +60,11 @@ a:focus {
   text-decoration: underline;
 }
 
+p:empty,
+p:blank {
+  display: none;
+}
+
 code {
   color: hsla( 155, 95%, 95%, 1 );
   font-size: 17px;
@@ -221,7 +226,7 @@ hr {
 
 .post img,
 .page img {
-  width: 100%;
+  max-width: 100%;
   display: block;
 }
 
@@ -271,7 +276,8 @@ hr {
 .page hr,
 .post hr,
 .page blockquote,
-.post blockquote {
+.post blockquote,
+.group span:not(:first-of-type) {
   margin-top: 1.765rem;
 }
 
@@ -352,6 +358,10 @@ hr {
 
 .tags__list__item:not(:last-of-type)::after {
   content: ",";
+}
+
+.group span {
+  display: block;
 }
 
 .pagination {
@@ -459,6 +469,27 @@ hr {
   .page {
     padding-top: 3.529rem;
     padding-bottom: 3.529rem;
+  }
+
+  .group {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .group span {
+    -ms-flex: 1 1 0; 
+    -webkit-flex: 1 1 0;
+    flex: 1 1 0;
+  }
+
+  .group + .group {
+    margin-top: 0.588rem;
+  }
+
+  .group span:not(:first-of-type) {
+    margin-top: 0;
+    margin-left: 0.588rem;
   }
 
   .pagination {
