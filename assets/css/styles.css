@@ -169,7 +169,7 @@ hr {
   margin-left: 0.588rem;
 }
 
-.header__nav-list__item:not(.header__nav-list__item--twitter):not(.header__nav-list__item--instagram):not(.header__nav-list__item--pinterest) .header__nav-list__item__icon {
+.header__nav-list__item:not(.header__nav-list__item--twitter):not(.header__nav-list__item--instagram):not(.header__nav-list__item--pinterest):not(.header__nav-list__item--youtube) .header__nav-list__item__icon {
   display: none;
 }
 
@@ -186,20 +186,25 @@ hr {
 }
 
 .header__nav-list__item--twitter .header__nav-list__item__icon {
-  background: url(/assets/images/twitter.svg);
+  background: url(/assets/images/twitter.svg) no-repeat;
 }
 
 .header__nav-list__item--instagram .header__nav-list__item__icon {
-  background: url(/assets/images/instagram.svg);
+  background: url(/assets/images/instagram.svg) no-repeat;
 }
 
 .header__nav-list__item--pinterest .header__nav-list__item__icon {
-  background: url(/assets/images/pinterest.svg);
+  background: url(/assets/images/pinterest.svg) no-repeat;
+}
+
+.header__nav-list__item--youtube .header__nav-list__item__icon {
+  background: url(/assets/images/youtube.svg) no-repeat;
 }
 
 .header__nav-list__item--twitter .header__nav-list__item__title,
 .header__nav-list__item--instagram .header__nav-list__item__title,
-.header__nav-list__item--pinterest .header__nav-list__item__title {
+.header__nav-list__item--pinterest .header__nav-list__item__title,
+.header__nav-list__item--youtube .header__nav-list__item__title {
   width: 0.059rem;
   display: block;
   text-indent: 100%;
@@ -414,7 +419,7 @@ hr {
   padding-right: 1.176rem;
 }
 
-@media only screen and (min-width: 28.125em) {
+@media only screen and (min-width: 29.688em) {
   .header__nav-list__item:not(:first-of-type) {
     margin-left: 1.176rem;
   }
