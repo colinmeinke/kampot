@@ -1,12 +1,23 @@
 {
   "name": "kampot",
-  "version": "0.1.4",
-  "author": "Colin Meinke <hello@colinmeinke.com>",
+  "version": "1.0.0",
+  "author": {
+    "name": "Colin Meinke",
+    "email": "hello@colinmeinke.com",
+    "url": "colinmeinke.com"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/colinmeinke/kampot"
   },
-  "license": "MIT",
+  "keywords": [
+    "blog",
+    "ghost",
+    "performance",
+    "responsive",
+    "theme"
+  ],
+  "license": "ISC",
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-concat": "^2.6.0",
