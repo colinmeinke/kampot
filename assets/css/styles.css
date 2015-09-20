@@ -414,7 +414,7 @@ hr {
   padding-right: 1.176rem;
 }
 
-@media only screen and (min-width: 27.059em) {
+@media only screen and (min-width: 28.125em) {
   .header__nav-list__item:not(:first-of-type) {
     margin-left: 1.176rem;
   }
